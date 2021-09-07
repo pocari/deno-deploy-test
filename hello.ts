@@ -1,8 +1,8 @@
 addEventListener("fetch", (event) => {
   const { path } = new URL(event.request.url);
-  if (pathname == '/') {
+  if (path == '/') {
     event.respondWith(new Response("Hello world xx"));
-  } else if (pathname == '/hoge') {
+  } else if (path == '/hoge') {
     event.respondWith(new Response("Hello world yy"));
   }
 });
